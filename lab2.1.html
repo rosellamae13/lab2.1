@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset = "UTF-8">
+         <title> LABORATORY ACTIVITY 2.1 </title>
+         <style type="text/css">
+            table{
+                border: 2px solid black;
+                width: 80px;
+                height: 30px;
+            }
+         </style>
+</head>
+<body>
+  
+    <form>
+
+    <label> Last Name </label>
+     <input type = "text" id = "lname"> 
+    <label> First Name </label>
+     <input type = "text" id = "fname"> <br> <br>
+    <label> Section </label>
+     <input type = "text"  id = "section"> 
+    <label> Year </label>
+     <input type = "number" id = "year"> <br> <br> <hr>
+    <label> Quiz </label>
+     <input type = "number" id = "quiz"> <br> <br>
+    <label> Assignment </label>
+     <input type = "number"  id = "ass"> <br> <br>
+    <label> Recitation </label>
+     <input type = "number" id = "rec"> <br> <br>
+    <label> Term Examination </label>
+     <input type = "number" id = "exam"> <br> <br>
+    <button type = "button" onclick = "haha()"> Show Computed Grades </button> <br> <br>
+    
+  <p id="amo">Name: (Last Name, First Name)</p>
+  <p id="oma">Class:</p>
+
+    <table>
+        <label> Quiz </label>
+        <td id="hatdog"></td>
+    </table>
+    <br>
+    <table>
+        <label> Assignment </label>
+        <td id="hatdog1"></td>
+    </table>
+    <br>
+    <table>
+        <label> Recitation </label>
+        <td id="hatdog2"></td>
+    </table>
+    <br>
+    <table>
+        <label> Term Examination </label>
+        <td id="hatdog3"></td>
+    </table>
+    <br>
+
+
+    </form>
+
+    <script type = "text/javascript">
+
+      function haha(){
+        var a, b, c, d, e, f, g, h;
+
+        a= document.getElementById("lname").value;
+        b= document.getElementById("fname").value;
+        c= document.getElementById("section").value;
+        d= document.getElementById("year").value;
+        e= document.getElementById("quiz").value;
+        f= document.getElementById("ass").value;
+        g= document.getElementById("rec").value;
+        h= document.getElementById("exam").value;
+        
+        document.getElementByid ("amo").innerHTML = "Name: (Last Name, First Name)" + a + " , " + b;
+        document.getElementByid ("oma").innerHTML = "Class" + d + " - " + c;
+        document.getElementById ("hatdog").innerHTML = e;
+        document.getElementById ("hatdog1").innerHTML = f;
+        document.getElementById ("hatdog2").innerHTML = g;
+        document.getElementById ("hatdog3").innerHTML = h;
+
+
+
+     } 
+     </script>
+    
+    </body>
+    </html>
